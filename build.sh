@@ -19,7 +19,7 @@ TOOLCHAIN_DIR="${HOME}/toolchain"
 
 # Kernel Details
 BASE_AK_VER="owlcore"
-VER=".rc.1.-p-uber"
+VER=".rc.6.33.-p-uber"
 AK_VER="$BASE_AK_VER$VER"
 
 
@@ -30,7 +30,7 @@ export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER=Dabug123
 export KBUILD_BUILD_HOST=BuildBox
-export CROSS_COMPILE="$TOOLCHAIN_DIR/aarch64-linux-android-5.x-kernel/bin/aarch64-linux-android-"
+export CROSS_COMPILE="$TOOLCHAIN_DIR/aarch64-linux-android-6.x-kernel/bin/aarch64-linux-android-"
 if [ "$USE_CCACHE" = 1 ]; then
    export CROSS_COMPILE="ccache $CROSS_COMPILE"
 else
