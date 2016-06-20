@@ -13,12 +13,12 @@ THREAD="-j24"
 KERNEL="Image.gz"
 DTBIMAGE="dtb"
 DEFCONFIG="saber_defconfig"
-KERNEL_DIR="${HOME}/kernel/saberTest"
+KERNEL_DIR=`pwd`
 ANYKERNEL_DIR="$KERNEL_DIR/saberCore/AK-AnyKernel2"
 TOOLCHAIN_DIR="${HOME}/toolchain"
 
 # Kernel Details
-BASE_AK_VER="fuckery"
+BASE_AK_VER="owlcore"
 VER=".4.753-p-uber"
 AK_VER="$BASE_AK_VER$VER"
 
@@ -28,9 +28,9 @@ export USE_CCACHE=1
 export LOCALVERSION=~`echo $AK_VER`
 export ARCH=arm64
 export SUBARCH=arm64
-export KBUILD_BUILD_USER=f100cleveland
+export KBUILD_BUILD_USER=Dabug123
 export KBUILD_BUILD_HOST=BuildBox
-export CROSS_COMPILE="$TOOLCHAIN_DIR/uber-aarch64-linux-android-6.0-kernel/bin/aarch64-linux-android-"
+export CROSS_COMPILE="$TOOLCHAIN_DIR/aarch64-linux-android-6.x-kernel/bin/aarch64-linux-android-"
 if [ "$USE_CCACHE" = 1 ]; then
    export CROSS_COMPILE="ccache $CROSS_COMPILE"
 else
@@ -41,7 +41,7 @@ fi
 REPACK_DIR="$ANYKERNEL_DIR"
 PATCH_DIR="$ANYKERNEL_DIR/patch"
 MODULES_DIR="$ANYKERNEL_DIR/modules"
-ZIP_MOVE="$KERNEL_DIR/saber-zip"
+ZIP_MOVE="$KERNEL_DIR/owl-zip"
 ZIMAGE_DIR="$KERNEL_DIR/arch/arm64/boot"
 
 # Functions
@@ -89,7 +89,7 @@ function make_zip {
 DATE_START=$(date +"%s")
 
 echo -e "${green}"
-echo "saberCore64 Kernel Creation Script:"
+echo "OwlCore64 Kernel Creation Script:"
 echo
 
 echo "---------------"
@@ -100,7 +100,7 @@ echo -e "${red}"; echo -e "${blink_red}"; echo "$AK_VER"; echo -e "${restore}";
 
 echo -e "${green}"
 echo "-----------------"
-echo "Making sC64 Kernel:"
+echo "Making oC64 Kernel:"
 echo "-----------------"
 echo -e "${restore}"
 
