@@ -12,7 +12,7 @@ clear
 THREAD="-j24"
 KERNEL="Image.gz"
 DTBIMAGE="dtb"
-DEFCONFIG="saber_defconfig"
+DEFCONFIG="owl_defconfig"
 KERNEL_DIR=`pwd`
 ANYKERNEL_DIR="$KERNEL_DIR/saberCore/AK-AnyKernel2"
 TOOLCHAIN_DIR="${HOME}/toolchain"
