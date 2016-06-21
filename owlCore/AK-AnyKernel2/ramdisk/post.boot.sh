@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-# Custom Kernel Settings for fuckery!!
+# Custom Kernel Settings for owlCore!!
 
 
 PATH=/sbin:/system/sbin:/system/bin:/system/xbin
