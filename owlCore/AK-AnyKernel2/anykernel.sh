@@ -3,7 +3,7 @@
 
 ## AnyKernel setup
 # EDIFY properties
-kernel.string=saberCore
+kernel.string=owlCore
 do.devicecheck=1
 do.initd=1
 do.modules=1
