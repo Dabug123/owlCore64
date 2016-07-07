@@ -19,7 +19,7 @@ TOOLCHAIN_DIR="${HOME}/toolchain"
 
 # Kernel Details
 BASE_AK_VER="owlcore"
-VER=".6.1-p-uber"
+VER=".7.5-p-uber"
 AK_VER="$BASE_AK_VER$VER"
 
 
