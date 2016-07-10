@@ -49,6 +49,12 @@ config IOSCHED_ZEN
 	---help---
 	FCFS, dispatches are back-inserted, deadlines ensure fairness.
         Should work best with devices where there is no travel delay.
+		
+config IOSCHED_TRIPNDROID
+ 	tristate "Tripndroid"
+ 	default y
+ 	---help---
+ 	  The Trip N Droid scheduler
 
 config IOSCHED_CFQ
 	tristate "CFQ I/O scheduler"
@@ -148,6 +154,9 @@ choice
 
 	config DEFAULT_FIOPS
 		bool "FIOPS" if IOSCHED_FIOPS=y
+		
+	config DEFAULT_TRIPNDROID
+ 		bool "TRIPNDROID" if IOSCHED_TRIPNDROID=y
 
 endchoice
 
@@ -161,6 +170,7 @@ config DEFAULT_IOSCHED
 	default "fiops" if DEFAULT_FIOPS
 	default "sio" if DEFAULT_SIO
 	default "zen" if DEFAULT_ZEN
+	default "tripndroid" if DEFAULT_TRIPNDROID
 
 endmenu
 
