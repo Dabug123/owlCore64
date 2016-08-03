@@ -19,7 +19,7 @@ TOOLCHAIN_DIR="${HOME}/toolchain"
 
 # Kernel Details
 BASE_AK_VER="Haterville"
-VER=".rc.7.6.-p-uber"
+VER=".rc.8.2.-p-uber"
 AK_VER="$BASE_AK_VER$VER"
 
 
