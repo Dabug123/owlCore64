@@ -19,7 +19,7 @@ TOOLCHAIN_DIR="${HOME}/toolchain"
 
 # Kernel Details
 BASE_AK_VER="Haterville"
-VER=".stable.1.5.-p-linaro"
+VER=".stable.3.9.p-linaro"
 AK_VER="$BASE_AK_VER$VER"
 
 
